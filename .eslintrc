@@ -1,0 +1,9 @@
+{
+  "extends": ["wcl-backend", "plugin:prettier/recommended", "plugin:jest/recommended"],
+  parserOptions: {
+    ecmaVersion: 9,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
+    }
+  }
+}

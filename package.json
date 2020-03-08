@@ -1,0 +1,67 @@
+{
+  "name": "passport-wechat-mp",
+  "description": "passport strategy for wechat mini program",
+  "version": "1.0.0",
+  "main": "./lib",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "passport-oauth2": "^1.5.0",
+    "passport-strategy": "^1.0.0",
+    "pkginfo": "^0.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-wcl-backend": "^0.4.0",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jest-preset-loopback": "^1.0.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCharlieLi/passport-wechat-mp.git"
+  },
+  "keywords": [
+    "passport",
+    "wechat",
+    "mini",
+    "program",
+    "oauth",
+    "auth",
+    "oauth2"
+  ],
+  "author": {
+    "name": "CCharlieLi",
+    "email": "ccharlieli@live.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CCharlieLi/passport-wechat-mp/issues"
+  },
+  "homepage": "https://github.com/CCharlieLi/passport-wechat-mp#readme",
+  "jest": {
+    "testRegex": "test/.*\\.test\\.js$"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "make lint",
+      "pre-push": "make lint"
+    }
+  }
+}
