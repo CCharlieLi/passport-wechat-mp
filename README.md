@@ -1,5 +1,7 @@
 # passport-wechat-mp
 
+[![Build Status](https://travis-ci.com/CCharlieLi/passport-wechat-mp.svg?branch=master)](https://travis-ci.com/CCharlieLi/passport-wechat-mp)
+
 Wechat Mini Program authentication strategy for [Passport](http://passportjs.org/).
 
 ## Install
@@ -55,6 +57,10 @@ app.get('/mp/login', passport.authenticate('wechat-mp', {
 $ npm test
 # yarn test
 ```
+
+## TODO
+
+- [ ] Strategy unit test
 
 ## License
 
