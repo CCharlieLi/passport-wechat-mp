@@ -25,7 +25,13 @@ passport.use(
       appSecret: app.get('wechatMPSecret')
     },
     async (req, profile, done) => {
-      User.findOrCreate({ exampleId: profile.id }, (err, user) => {
+      // profile
+      // {
+      //   openid,
+      //   unionid,
+      //   session_key
+      // }
+      User.findOrCreate({ exampleId: profile.openid }, (err, user) => {
         return cb(err, user);
       });
     }
