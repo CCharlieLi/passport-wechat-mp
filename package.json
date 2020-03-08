@@ -1,7 +1,7 @@
 {
   "name": "passport-wechat-mp",
   "description": "passport strategy for wechat mini program",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib",
   "directories": {
     "lib": "lib"
